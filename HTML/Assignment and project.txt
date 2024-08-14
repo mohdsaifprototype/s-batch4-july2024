@@ -1,0 +1,10 @@
+Assignment 1: Nested List
+Assignment 2: Make a webpage using forms and table
+Assignment 3: Practice all the codes of HTML Form from https://www.w3schools.com/html/html_form_input_types.asp
+
+Assignment 4: Mock Test (August 21, 2024).
+Project 1: Design a landing using any software that you like such as Figma(Preferred), InDesign, illustrator, or Photoshop etc.
+Then write the markup of that content used in the design to a HTML file.
+
+
+Final Date for the submission: August 23, 2024.
