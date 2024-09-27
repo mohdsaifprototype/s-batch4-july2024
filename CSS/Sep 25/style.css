@@ -4,6 +4,7 @@ body {
 }
 
 .container{
+  color: tomato;
   /* background-color: aqua; */
   height: 1800px;
   border: 2px solid red;

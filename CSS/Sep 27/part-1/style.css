@@ -1,0 +1,32 @@
+body {
+  background-color: antiquewhite;
+  height: 100vh;
+}
+
+.container {
+  color: tomato;
+  height: 80%;
+  border: 2px solid red;
+}
+
+.box {
+  border: 2px solid blue;
+}
+
+/* .box-1{
+  box-sizing: border-box;
+  padding: 12px;
+  border-width: 12px;
+  margin: 12px;
+  width: 200px;
+  height: 200px;
+} */
+.box-2{
+  box-sizing: border-box;
+  padding: 12px;
+  border-width: 12px;
+  margin: 12px;
+  min-width: 200px;
+  max-width: 600px;
+  height: 200px;
+}
