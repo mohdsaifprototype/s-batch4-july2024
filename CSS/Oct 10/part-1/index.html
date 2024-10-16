@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>October 10 | CSS Flexbox</title>
+  <style>
+    .flex-container {
+      display: flex; /* Defines a flex container */
+      flex-direction: row; /* Items in a horizontal row */
+      flex-wrap: wrap; /* Items can wrap if there's not enough space */
+      justify-content: space-around; /* Even spacing around items */
+      align-items: center; /* Items align to the center of the cross-axis */
+      gap: 15px; /* 15px gap between items */
+    }
+
+    .flex-item {
+      background-color: #8BC34A;
+      padding: 20px;
+      flex: 1 1 150px; /* Grow, shrink, and set a basis of 150px */
+      order: 2; /* Default order, but this item appears second */
+      align-self: flex-start; /* Align this item to the start of the cross-axis */
+    }
+
+    .flex-item:first-child {
+      order: 1; /* The first item appears first due to order property */
+    }
+
+    .flex-item:nth-child(3) {
+      align-self: center; /* The third item aligns to the center */
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quas aliquid reprehenderit porro quaerat. Rerum voluptatum similique, inventore ratione eius assumenda cumque reiciendis, quasi voluptas quis dolor necessitatibus consectetur mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia mollitia dolore perferendis repudiandae. Nam, labore? Officiis at magnam tenetur placeat necessitatibus. Dolores, eveniet! Vel ratione autem illo ducimus! Quas!</p>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+  </div>
+</body>
+</html>

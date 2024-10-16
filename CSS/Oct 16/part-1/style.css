@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva,   Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  background-color: cadetblue;
+}
+
+h2 {
+  font-family: "Sixtyfour Convergence Evenly";
+  color: red;
+}
+p{
+  font-family: "Caveat";
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img
+          class="nav-logo"
+          src="assets/fitness-club-logo.png"
+          alt="gym-logo"
+          height="60"
+        />
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <div class="nav-right">
+          <form action="#">
+            <div class="search-group">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                class="search-input"
+              /><button type="button" class="search-btn">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <a class="btn" href="tel:918826973280">Call Us Now</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Signup Today</h1>
+        <form class="main-form" action="#">
+          <input type="text" name="fname" id="fname" placeholder="John">
+          <input type="text" name="lname" id="lname" placeholder="Doe">
+          <input type="email" name="email" id="email" placeholder="johndoe@example.com">
+          <input type="tel" name="contact" id="mboNo" placeholder="+91 54268 56789">
+          <input type="submit" value="Signup">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 all rights reserved!</p>
+      </div>
+    </footer>
+  </body>
+</html>

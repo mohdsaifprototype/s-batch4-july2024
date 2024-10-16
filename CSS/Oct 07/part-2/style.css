@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  border: 3px solid red;
+  width: 90vw;
+  margin: auto;
+}
+
+.container > div {
+  border: 2px solid blue;
+  margin: 4px;
+  padding: 12px;
+}
+.container * {
+  border: 1px solid green;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-items {
+  padding: 4px;
+}
+/* 
+  All the properties the we can apply on flex container
+
+  flex-direction: row | row-reverse | column | column-reverse
+
+  flex-wrap: nowrap | wrap | wrap-reverse
+  
+  flex-flow: flex-direction flex-wrap;
+
+  justify-content: start | end | center | space-between | space-around | space-evenly;
+  
+  align-items: stretch | flex-start | flex-end | center | baseline;
+  
+  align-content: stretch | flex-start | flex-end | center | space-between | space-around;
+*/
