@@ -1,0 +1,21 @@
+Arima: CSS class for a variable style
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.arima-<uniquifier> {
+  font-family: "Arima", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+Inter: CSS class for a variable style
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

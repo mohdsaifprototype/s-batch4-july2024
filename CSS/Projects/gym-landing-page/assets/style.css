@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 * {
   box-sizing: border-box;
 }
 
 :root{
-  --primary-color: #54ebff;
-  --primary-bg: #3d3838;
+  --primary-bg: black;
+  --primary-color: white;
 }
 
 body {
@@ -22,29 +22,30 @@ body {
 body::before {
   content: "";
   position: absolute;
-  border: 2px solid rebeccapurple;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
-  background: url("gym-workout-bg.jpg") no-repeat center;
+  background: black url("gym-workout-bg.jpg") no-repeat center center/cover;
+  filter: opacity(50%);
 }
 
-.navbar,
+/* .navbar,
 .navbar * {
   border: 1px solid red;
-}
+} */
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: var(--primary-bg);
+  padding: 12px 0;
 }
 
 .nav-logo{
-  mix-blend-mode: multiply;
+  filter: drop-shadow(0px 0px 8px gray);
 }
 
 .navbar ul{
@@ -52,7 +53,7 @@ body::before {
   padding: 0;
 }
 
-.navbar a{
+.nav-links a{
   color: var(--primary-color);
 }
 
@@ -67,6 +68,10 @@ body::before {
   padding: 4px;
 }
 
+.search-group{
+  box-shadow: 0px 0px 6px 4px gray;
+  border-radius: 12px;
+}
 
 .search-input{
   border: none;
@@ -87,13 +92,19 @@ body::before {
   border-start-end-radius: 12px;
   border-end-end-radius: 12px;
   padding: 8px;
-  background-color: brown;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--primary-bg);
+  cursor: pointer;
 }
 
 .search-btn:hover{
-  color: #cdb9b9;
-  background-color: #8d2626;
+  color: var(--primary-color);
+  background-color: var(--primary-bg);
+}
+
+.search-btn:active{
+  color: rgb(220, 214, 214);
+  background-color: rgb(0, 0, 0);
 }
 
 .nav-right {
@@ -106,17 +117,51 @@ body::before {
 .btn{
   all: unset;
   cursor: pointer;
-  color: var(--primary-bg);
-  /* background: ; */
+  color: var(--primary-color);
+  background: var(--primary-bg);
+  padding: 6px 12px;
+  border-radius: 8px;
+  outline: 2px solid;
 }
+
+.btn:hover{
+  color: var(--primary-bg);
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 6px 4px gray;
+}
+
+.btn:active{
+  background-color: rgb(39, 37, 37);
+  color: rgb(222, 217, 217);
+  box-shadow: 0px 0px 6px 4px gray;
+} 
 
 .container{
   width: 90%;
   margin: auto;
 }
 
+.sign-up{
+  font-family: "Delius", cursive;
+}
+
 .main-form{
   display: flex;
   flex-flow: column nowrap;
-  
+  gap: 12px;
+  width: 400px;
+  padding: 20px 12px;
+  outline: 2px solid var(--primary-bg);
+  border-radius: 4px;
+  background-color: #ffffffaf;
 }
+
+.main-form input{
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid var(--primary-bg);
+  font-family: Inter, sans-serif;
+  font-size: 1.25rem;
+}
+

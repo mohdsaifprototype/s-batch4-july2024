@@ -1,0 +1,129 @@
+/* WebSafe fonts */
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+header * {
+  background-color: white;
+}
+header{
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 64px;
+  align-items: center;
+}
+.navbar-logo{
+  height: 28px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 0 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 8px;
+  background-color: transparent;
+}
+
+.nav-links li:hover {
+  /* border-bottom: 1px solid rgb(85, 228, 121); */
+  color: darkcyan;
+  box-shadow: 0px 0 12px 4px rgb(85, 228, 121);
+  border-radius: 4px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 4px 8px;
+}
+
+.login-btn {
+  background-color: white;
+  color: green;
+  border-radius: 4px;
+  /* outline: 1px solid; */
+}
+.signup-btn {
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+  /* outline: 1px solid; */
+}
+/* Header end */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.grid-container {
+  background: #bbb;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(6, minmax(200px, 400px)); */
+  grid-template-rows: 80px 3fr 2fr max-content;
+  grid-template-areas:
+    "header header header header header header"
+    "element1 element1 element4 element4 element4 element4"
+    "element1 element1 element2 element2 element3 element3"
+    "footer footer footer footer footer footer";
+  font-family: "Inter", sans-serif;
+}
+
+.grid-item {
+  outline: 1px #1ef solid;
+  padding: 8px;
+}
+
+.item-1 {
+  padding: 0;
+  grid-area: header;
+}
+.item-2 {
+  grid-area: element1;
+}
+.item-3 {
+  grid-area: element2;
+}
+.item-4 {
+  grid-area: element3;
+}
+.item-5 {
+  grid-area: element4;
+}
+.item-6 {
+  grid-area: footer;
+}
+footer{
+  text-align: center;
+}
+.col-1{
+  text-align: start;
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
