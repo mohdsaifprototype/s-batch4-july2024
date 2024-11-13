@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: salmon;
+  min-height: 100vh;
+  animation-name: magic;
+  animation-duration: 70s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
+}
+
+.container {
+  font-size: 30px;
+  outline: 2px solid #f1e;
+  margin: 40px;
+  /*   position: relative; */
+  padding: 12px;
+}
+
+.box {
+  border: 2px solid red;
+  width: 200px;
+  height: 160px;
+  /* transform-origin: -200px 80px; */
+}
+
+/* CSS Animation has the following properties
+1. animation-name : the name of the animation;
+2. animation-duration: 5s;
+3. animation-timing-function : ease-in;
+4. animation-delay: 1s;
+5. animation-iteration-count: 3;
+6. animation-direction : alternate;
+*/
+
+.box {
+  /* animation-name: magic; */
+  /* animation-duration: 4000ms; */
+  /* animation-duration: 14s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both; */
+}
+
+/* .box{
+  animation: sizing 3s ease-in infinite ;
+}
+
+@keyframes sizing {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* @keyframes magic {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: yellow;
+  }
+} */
+
+@keyframes magic {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  30% {
+    background-color: yellow;
+  }
+  45% {
+    background-color: green;
+  }
+  60% {
+    background-color: blue;
+  }
+  75% {
+    background-color: indigo;
+  }
+  90% {
+    background-color: violet;
+  }
+  100% {
+    background-color: red;
+  }
+}

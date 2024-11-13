@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: salmon;
+  min-height: 100vh;
+}
+
+.container {
+  outline: 2px solid #f1e;
+  margin: 40px;
+/*   position: relative; */
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #eb1;
+  /* position: absolute; */
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  position: relative;
+  /* when we chage the position propery from static to any other value. Then we can access the following css properties for the particular element.
+  1. top
+  2. left
+  3. bottom
+  4. right
+  5. z-index
+  */
+
+  left: 0px;
+  background-color: rgba(255, 17, 239, 0.463);
+  top: 0;
+}
+
+.box-2 {
+  position: relative;
+  left: 200px;
+  background-color: rgba(251, 255, 17, 0.463);
+}

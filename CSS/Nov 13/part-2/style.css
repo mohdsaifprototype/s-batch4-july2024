@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 40px;
+}
+body {
+  margin: 0;
+  background-color: salmon;
+  min-height: 100vh;
+}
+
+.container {
+  font-size: 30px;
+  outline: 2px solid #f1e;
+  margin: 40px;
+/*   position: relative; */
+}
+
+.em{
+  font-size: 1.5em;
+}
+.rem{
+  font-size: 1rem;
+}

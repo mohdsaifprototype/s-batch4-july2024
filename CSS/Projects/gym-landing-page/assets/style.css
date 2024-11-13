@@ -191,7 +191,7 @@ body::before {
 }
 
 .section:nth-child(odd){
-  background-color: #4f412d85;
+  background-color: #00000085;
 
 }
 /* Section end */
@@ -218,6 +218,11 @@ body::before {
   border-radius: 50%;
   width: 100%;
 }
+
+.review-container h4{
+  margin: 0;
+  margin-bottom: 8px;
+}
 /* Section 4 end */
 
 footer {
@@ -230,14 +235,14 @@ footer {
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 40px;
 }
 
 footer ul {
   list-style-image: url("icons/chevron-right.svg");
   list-style-position: outside;
-  margin: 0;
+  padding-inline-start: 10px;
 }
 
 footer a {
