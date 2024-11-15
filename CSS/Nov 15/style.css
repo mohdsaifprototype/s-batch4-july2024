@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: auto;
+  color: auto;
+  background-color: salmon;
+  min-height: 100vh;
+}
+
+.container {
+  outline: 2px solid #f1e;
+  margin: 12px;
+  position: relative;
+  z-index: 0;
+  height: 300px;
+  width: 400px;
+}
+
+.sub-container {
+  height: 200px;
+  width: 200px;
+  border: 5px solid #f1e;
+}
+
+.sub-container:hover {
+  animation: boxshadow 4s ease infinite normal;
+}
+
+.box {
+  border: 2px solid;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 0;
+}
+
+.top-left {
+  left: 0;
+  top: 0;
+  background-color: red;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+.top-right {
+  left: 100px;
+  top: 0;
+  background-color: yellow;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+.bottom-left {
+  left: 0;
+  top: 100px;
+  background-color: blue;
+  animation-name: example3;
+  animation-duration: 4s;
+}
+.bottom-right {
+  left: 100px;
+  top: 100px;
+  background-color: green;
+  animation-name: example4;
+  animation-duration: 4s;
+}
+
+/* Let's define our animation */
+
+@keyframes boxshadow {
+  0% {
+    box-shadow: -4px -4px 4px 4px white;
+  }
+  33% {
+    box-shadow: 4px -4px 4px 4px white;
+  }
+  66% {
+    box-shadow: 4px 4px 4px 4px white;
+  }
+  100% {
+    box-shadow: -4px 4px 4px 4px white;
+  }
+}
+
+@keyframes example1 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 100px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 100px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes example2 {
+  0% {
+    background-color: yellow;
+    left: 100px;
+    top: 0px;
+  }
+  25% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+  50% {
+    background-color: green;
+    left: 0px;
+    top: 100px;
+  }
+  75% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: yellow;
+    left: 100px;
+    top: 0px;
+  }
+}
+@keyframes example3 {
+  0% {
+    background-color: blue;
+    left: 0px;
+    top: 100px;
+  }
+  25% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: red;
+    left: 100px;
+    top: 0px;
+  }
+  75% {
+    background-color: yellow;
+    left: 100px;
+    top: 100px;
+  }
+  100% {
+    background-color: blue;
+    left: 0px;
+    top: 100px;
+  }
+}
+@keyframes example4 {
+  0% {
+    background-color: green;
+    left: 100px;
+    top: 100px;
+  }
+  25% {
+    background-color: red;
+    left: 0px;
+    top: 100px;
+  }
+  50% {
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    background-color: blue;
+    left: 100px;
+    top: 0px;
+  }
+  100% {
+    background-color: green;
+    left: 100px;
+    top: 100px;
+  }
+}
