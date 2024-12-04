@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+body {
+  margin: 0;
+  background-color: saddlebrown;
+  color: yellow;
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "aside aside main main main main"
+    "footer footer footer footer footer footer";
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.text-center{
+  text-align: center;
+}
+
+aside{
+  padding-left: 16px;
+}
+
+aside a{
+  color: inherit;
+}
+
+/* 
+Media Query is a way to write css code that will be applied to the document only when the screen size is less than or equal to the specified size.
+*/
+
+/* Media Query */
+/* For tablet */
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-areas:
+      "header header header header header header"
+      "aside aside aside aside aside aside"
+      "main main main main main main"
+      "footer footer footer footer footer footer";
+  }
+}
+
+/* For mobile */
+@media screen and (max-width: 480px) {
+  body {
+    grid-template-areas:
+      "header header header header header header"
+      "main main main main main main"
+      "footer footer footer footer footer footer";
+  }
+  .aside{
+    display: none;
+  }
+}

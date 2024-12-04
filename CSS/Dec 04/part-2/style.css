@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #eac96e;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  display: none;
+}
+
+/* 
+Mobile S: 320px
+Mobile M: 375px
+Mobile L: 425px
+Tablet: 768px
+Laptop: 1024px
+Laptop L: 1440px
+Desktop: 2560px
+*/
+
+/* Media Queries */
+/* Desktop */
+@media screen and (max-width: 2560px) and (min-width: 1441px) {
+  body{
+    background-color: crimson;
+  }
+  .desktop{
+    display: block;
+  }
+}
+/* Laptop L */
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  body{
+    background-color: cyan;
+  }
+  .laptop-l{
+    display: block;
+  }
+}
+/* Laptop */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  body{
+    background-color: orange;
+  }
+  .laptop{
+    display: block;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  body {
+    background-color: yellow;
+  }
+  .tablet{
+    display: block;
+  }
+}
+/* Mobile L */
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  body {
+    background-color: green;
+  }
+  .mobile-l{
+    display: block;
+  }
+}
+/* Mobile M */
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  body {
+    background-color: blue;
+  }
+  .mobile-m{
+    display: block;
+  }
+}
+/* Mobile S */
+@media screen and (max-width: 320px){
+  body {
+    background-color: red;
+  }
+  .mobile-s{
+    display: block;
+  }
+}
+
+
+
+/* To modify or hide scrollbar */
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #907c45;
+  border-radius: 4px;
+}
