@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: black;
+  --primary-color: white;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: black url("gym-workout-bg.jpg") no-repeat center center/cover
+    fixed;
+  filter: opacity(50%);
+}
+
+/* .navbar,
+.navbar * {
+  border: 1px solid red;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-bg);
+  padding: 12px 0;
+}
+
+.nav-logo {
+  filter: drop-shadow(0px 0px 8px gray);
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.search-group {
+  box-shadow: 0px 0px 6px 4px gray;
+  border-radius: 12px;
+}
+
+.search-input {
+  border: none;
+  margin: 0;
+  border-start-start-radius: 12px;
+  border-end-start-radius: 12px;
+  padding: 8px 4px 8px 12px;
+}
+
+.search-input:focus-visible {
+  /* border: none; */
+  outline: none;
+}
+
+.search-btn {
+  border: none;
+  margin: 0;
+  border-start-end-radius: 12px;
+  border-end-end-radius: 12px;
+  padding: 8px;
+  background-color: var(--primary-color);
+  color: var(--primary-bg);
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-bg);
+}
+
+.search-btn:active {
+  color: rgb(220, 214, 214);
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-right {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  color: var(--primary-color);
+  background: var(--primary-bg);
+  padding: 6px 12px;
+  border-radius: 8px;
+  outline: 2px solid;
+}
+
+.btn:hover {
+  color: var(--primary-bg);
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 6px 4px gray;
+}
+
+.btn:active {
+  background-color: rgb(39, 37, 37);
+  color: rgb(222, 217, 217);
+  box-shadow: 0px 0px 6px 4px gray;
+}
+
+.main-container {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 12px;
+}
+.sign-up .form-container {
+  position: sticky;
+  top: 20px;
+  outline: 2px solid var(--primary-bg);
+  border-radius: 4px;
+  background-color: #ffffffaf;
+  padding-block: 30px;
+}
+.form-container h1{
+  color: #3f3f3f;
+}
+.hero-content {
+  position: relative;
+}
+
+.hero-text-parent {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.sign-up {
+  font-family: "Delius", cursive;
+}
+
+.main-form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+  width: 24vw;
+  padding: 20px 12px;
+}
+
+.main-form input {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid var(--primary-bg);
+  font-family: Inter, sans-serif;
+  font-size: 1.25rem;
+}
+/* Section */
+.section{
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.section:nth-child(odd){
+  background-color: #00000085;
+
+}
+/* Section end */
+
+/* Section 3 */
+.img-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+/* Section 3 end */
+
+/* Section 4 */
+.main-review-container {
+  display: flex;
+  text-align: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 0 12px;
+}
+
+.review-container img{
+  border-radius: 50%;
+  width: 100%;
+}
+
+.review-container h4{
+  margin: 0;
+  margin-bottom: 8px;
+}
+/* Section 4 end */
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: start;
+  padding: 32px 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0 40px;
+}
+
+footer ul {
+  list-style-image: url("icons/chevron-right.svg");
+  list-style-position: outside;
+  padding-inline-start: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e3e3e3;
+  display: block;
+  padding: 4px 0;
+}
+a:hover{
+  text-decoration: underline;
+  color: rgb(110, 166, 184);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Media Queries */
+/* Desktop */
+@media screen and (max-width: 2560px) and (min-width: 1441px) {
+  body{
+    background-color: crimson;
+  }
+  .desktop{
+    display: block;
+  }
+}
+/* Laptop L */
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  body{
+    background-color: cyan;
+  }
+  .laptop-l{
+    display: block;
+  }
+}
+/* Laptop */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  body{
+    background-color: orange;
+  }
+  .laptop{
+    display: block;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  body {
+    background-color: yellow;
+  }
+  .tablet{
+    display: block;
+  }
+  .sign-up{
+    display: none;
+  }
+  .main-container {
+    grid-template-columns: auto;
+  }
+}
+/* Mobile L */
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  body {
+    background-color: green;
+  }
+  .mobile-l{
+    display: block;
+  }
+  .sign-up{
+    display: none;
+  }
+  .main-container {
+    grid-template-columns: auto;
+  }
+}
+/* Mobile M */
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  body {
+    background-color: blue;
+  }
+  .mobile-m{
+    display: block;
+  }
+  .sign-up{
+    display: none;
+  }
+  .main-container {
+    grid-template-columns: auto;
+  }
+}
+/* Mobile S */
+@media screen and (max-width: 320px){
+  body {
+    background-color: red;
+  }
+  .mobile-s{
+    display: block;
+  }
+  .sign-up{
+    display: none;
+  }
+  .main-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 767px){ 
+  .hero-section{
+    display: none;
+  }
+
+  html{
+    font-size: 12px;
+  }
+
+  .main-container{
+    padding: 0 4px;
+  }
+
+  .img-container{
+    flex-flow: row wrap;
+  }
+  .img-container img{
+    width: 48%;
+  }
+
+  .main-review-container {
+    flex-flow: row wrap;
+  }
+  
+  .review-container img{
+    border-radius: 50%;
+    width: 40vw;
+  }
+}
