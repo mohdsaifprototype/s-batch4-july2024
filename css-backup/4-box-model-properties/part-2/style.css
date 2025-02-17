@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  /* padding: 2px;
+  margin: 2px;
+  outline: 1px solid red; */
+}
+
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  background: salmon;
+}
+
+.container{
+  width: 480px;
+  margin: 12px;
+  border: 2px solid black;
+  outline: 4px solid blue;
+  padding: 12px;
+}
+
+.d-block{
+  display: block;
+}
+
+.d-inline{
+  display: inline;
+}
+
+.d-inline-block{
+  display: inline-block;
+}
+
+.d-none{
+  display: none;
+}
