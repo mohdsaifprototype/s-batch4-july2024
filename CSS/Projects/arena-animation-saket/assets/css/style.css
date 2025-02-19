@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
 * {
   box-sizing: border-box;
 }
@@ -42,7 +44,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: #111;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 
 .navbar {
@@ -57,8 +59,13 @@ body {
 }
 
 .logo {
+  all: unset;
   text-align: center;
   width: fit-content;
+}
+
+.logo{
+  cursor: pointer;
 }
 
 .logo img {
@@ -102,7 +109,7 @@ body {
 .banner .container img {
   background: url("../images/banner-bg-img.png") no-repeat;
   /* background-position-x: calc((500 + 18) * -0px); */
-  animation: banner-slide 15s infinite normal;
+  animation: banner-slide 12s step-start infinite normal none;
 }
 
 @keyframes banner-slide {
@@ -121,6 +128,9 @@ body {
   100% {
     background-position-x: calc((500 + 18) * -4px);
   }
+}
+
+section.section {
 }
 
 /* Utilities */
@@ -145,8 +155,49 @@ body {
   padding: 0;
 }
 
+.mini-cards{
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+}
+
+.mini-card {
+  background-color: #f5f5f5;
+  padding: 16px;
+  box-shadow: 0 0 2px;
+  border-radius: 8px;
+}
+
+.mini-card img{
+  border-radius: 8px;
+}
+
+.acb{
+  align-content: center;
+  max-width: 200px;
+  flex-grow: 1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.acb:hover{
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.mini-card-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
 footer .col {
   padding: 16px;
+}
+
+body > footer {
+  background-color: #ccc;
+  padding-block: 16px;
 }
 
 footer form input {
@@ -162,7 +213,9 @@ footer form input::placeholder {
   font-family: inherit;
 }
 
-footer form button {
+.button {
+  text-decoration: none;
+  display: inline-block;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -172,10 +225,10 @@ footer form button {
   cursor: pointer;
 }
 
-footer form button:hover {
+.button:hover {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
-footer form button:active {
+.button:active {
   color: var(--primary-color-2);
   background-color: var(--secondary-color-2);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
