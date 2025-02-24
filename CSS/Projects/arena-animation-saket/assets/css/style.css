@@ -147,6 +147,34 @@ section.section {
   justify-content: space-between;
 }
 
+
+.faqs-question{
+  font-style: italic;
+  box-shadow: 0 0 4px #aaaa;
+  border-radius: 8px;
+  padding-block: 12px;
+  padding-inline: 8px;
+  font-size: 20px;
+  margin-block: 12px;
+}
+
+.faqs-question summary {
+  font-weight: bolder;
+  color: #ec2825;
+}
+
+.faqs-question summary::before{
+  content: "Q. "
+}
+
+.faq-answer {
+  padding-inline-start: 32px;
+  margin-block-start: 8px;
+  background-color: #ffdf48;
+  padding-block: 12px;
+  border-radius: 8px;
+}
+
 footer .col {
   padding: 16px;
 }
@@ -156,12 +184,12 @@ body > footer {
   padding-block: 16px;
 }
 
-body > footer h4{
+body > footer h4 {
   margin-block-start: 0;
   margin-block-end: 4px;
 }
 
-body > footer ul{
+body > footer ul {
   margin: 0;
 }
 
@@ -182,7 +210,8 @@ footer form input {
 footer form input::placeholder {
   font-family: inherit;
 }
-/* Utilities */
+
+/* ======================Utilities=========================== */
 .container {
   max-width: 1440px;
   margin: auto;
@@ -232,7 +261,7 @@ footer form input::placeholder {
 
 .acb:hover {
   text-decoration: underline;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .button {
