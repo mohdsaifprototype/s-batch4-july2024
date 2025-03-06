@@ -273,23 +273,52 @@ section.section {
   border-radius: 8px;
 }
 
+.get-in-touch{
+  display: flex;
+  justify-content: space-between;
+}
+
 .enquiry-form{
   background-color: whitesmoke;
   padding: 20px;
   display: flex;
   flex-flow: column wrap;
   width: 100%;
-  max-width: 600px;
+  max-width: 520px;
   min-width: 320px;
   gap: 12px;
   border-radius: 8px;
   box-shadow: 0 0 2px;
 }
 
+.enquiry-form h2{
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
 .enquiry-form input, .enquiry-form select, .enquiry-form textarea, .enquiry-form button{
   padding: 12px;
   border-radius: 4px;
   font-size: 1.2rem;
+  border: none;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus, .enquiry-form button:focus{
+  outline: 2px solid rgb(0, 132, 255);
+}
+
+.enquiry-form textarea{
+  resize: block;
+  min-height: 120px;
+  max-height: 320px;
+}
+
+.enquiry-form + img{
+  mix-blend-mode: multiply;
 }
 
 .full-name{
@@ -368,6 +397,8 @@ footer form input::placeholder {
 .mini-cards {
   display: flex;
   justify-content: space-around;
+  
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -421,4 +452,27 @@ footer form input::placeholder {
 
 .rounded {
   border-radius: 100%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+/* Media Queries for mobile */
+@media screen and (max-width: 600px) {
+  .mini-cards{
+    justify-content: center;
+  }
+}
+
+/* Media Queries for tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .get-in-touch{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
