@@ -1,5 +1,5 @@
 # JavaScript
-JavaScript is a prototype based scripting language.
+JavaScript is a prototype based scripting as well as programming language.
 - It was developed using C language by Brendan Eich in 1995.
 - It is used by most of the modern browsers.
 - It is also used by Node.js.
@@ -39,3 +39,18 @@ To check if the Node.js is installed run the following command in powershell
 ```
 node -v
 ```
+
+## FAQs
+
+### What is JavaScript?
+JavaScript is a prototype based scripting and programming language.
+
+### What is the current version of JS?
+JavaScript is based on ECMAScript and JS doesn't have any version so it follwos the version of ECMAScript. Which is
+ECMAScript 2025 
+
+### What is CommonJS?
+CommonJS is the syntax for writing JS code before the realase of ES6.
+
+### What is ModernJS?
+ModernJS is the syntax for writing JS code after the realase of ES6.
