@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>June 10 | Events</title>
+</head>
+
+<body>
+  <button onclick="myFunction()">Click</button>
+
+  <p onmouseleave="myFunction2()" onmouseenter="myFunction3()">Click the button to open a prompt box.</p>
+  <script>
+    function myFunction() {
+      let x = prompt('Enter your name');
+      alert(`Hello ${x}`);
+      document.body.style.backgroundColor = "#0fff00"
+    }
+
+    function myFunction2() {
+      console.log("I know you moved your cursor out of the paragraph");
+    }
+
+    function myFunction3() {
+      console.log("I know you moved your cursor into the paragraph! now don't move your cursor out of the paragraph");
+    }
+  </script>
+</body>
+
+</html>
