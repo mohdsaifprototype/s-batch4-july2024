@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: #121212;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: .25rem .5rem;
+}
+
+.container p {
+  font-size: clamp(20px, 4rem, 4vw);
+  outline: 2px solid blue;
+  padding: 1rem;
+}
